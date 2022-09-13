@@ -69,7 +69,7 @@ public class BookRecViewAdapter extends RecyclerView.Adapter<BookRecViewAdapter.
             holder.expandedRelLayout.setVisibility(View.VISIBLE);
             holder.downArrow.setVisibility(View.GONE);
 
-            if (parentActivity.equals("allBooks")) {
+            if (parentActivity.equals(mContext.getString(R.string.all_books))) {
                 holder.btnDelete.setVisibility(View.GONE);
 
             } else if (parentActivity.equals("alreadyRead")) {
